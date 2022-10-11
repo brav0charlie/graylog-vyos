@@ -2,7 +2,9 @@
 [Graylog](https://graylog.org) [Content Pack](https://docs.graylog.org/docs/content-packs) for [VyOS](https://vyos.io) Routers
 
 ## About
-graylog-vyos is a content pack for Graylog that provides configuration to make monitoring VyOS firewall logs easier. 
+graylog-vyos is a content pack for Graylog that provides configuration to make monitoring VyOS firewall logs easier.
+
+For a quick-start tutorial on getting Graylog set up in Docker, I wrote a blog post on [Sending VyOS Syslog to Graylog](https://blog.billclark.io/), which includes a section on spinning up Graylog in Docker. 
 
 ## Features
 ### Inputs
