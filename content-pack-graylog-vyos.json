@@ -669,7 +669,7 @@
             "configuration": {
               "grok_pattern": {
                 "@type": "string",
-                "@value": "%{GREEDYDATA} LEN=%{DATA:length} %{GREEDYDATA}"
+                "@value": "%{GREEDYDATA} LEN=%{DATA:len} %{GREEDYDATA}"
               },
               "named_captures_only": {
                 "@type": "boolean",
