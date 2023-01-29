@@ -28,6 +28,8 @@ This feature requires a copy of the MaxMind GeoLite2-City.mmdb file. The config 
 ⚠️ **IMPORTANT NOTE!** If you choose to skip this feature, you'll need to disable this rule. Head to your System menu, then choose Pipelines. Click the little **edit** button on VyOS Firewall Messages, then click the **Edit** button under the **Stage 1** section. Click the **Remove** button to the right of *GeoIP Lookup: src_ip*. Click Save, and you're good to go.
 
 ## Installation Notes
+To install the content pack, log into Graylog, then navigate to the System menu, then Content Packs. Click Upload, then using the file finder, locate the .json file and click Upload.
+
 After installing the content pack, if you notice that your pipeline isn't Geocoding source addresses, or it appears that the firewall rule_action contains "R", "D", and "A" instead of Reject, Drop, or Accept, you may need to change your Graylog config a bit.
 
 Head to System -> Configurations, and at the top right look at the Message Processors Configuration list. You'll want to ensure that the Pipeline Processor runs *after* the Message Filter Chain. The message filter chain is responsible for extracting data from the message into fields, and the rule in Stage 0 of the VyOS Firewall Messages pipeline relies on two fields created by the message extractors. 
