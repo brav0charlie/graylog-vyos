@@ -6,6 +6,9 @@ graylog-vyos is a content pack for Graylog that provides configuration to make m
 
 For a quick-start tutorial on getting Graylog set up in Docker, I wrote a blog post on [Sending VyOS Syslog to Graylog](https://blog.billclark.io/), which includes a section on spinning up Graylog in Docker. 
 
+> [!IMPORTANT]
+> This will not work properly with a VyOS 1.4-rolling-202308040557 or later. The firewall structure was changed and I'm working on updates to support the changes.
+
 ## Features
 ### Inputs
 Syslog UDP Input on Port 514
